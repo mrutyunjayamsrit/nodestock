@@ -1,2 +1,20 @@
-<h1>Hello Stock App in handle bar</h1>
-    <p>{{{stuff}}}</p>
+<div class="jumbotron">
+  <h1 class="display-4">{{stock.companyName}} ({{stock.symbol}})</h1><br/>
+    <strong> primaryExchange:</strong> {{stock.primaryExchange}}<br/>
+    <strong> Latest Price: </strong>{{stock.latestPrice}}<br/>
+    <strong> Previous close: </strong> {{stock.previousClose }}<br/>
+    <strong> Open Price: </strong> {{stock.open}}<br/>
+    <strong> Close Price: </strong> {{stock.close}}<br/>
+    <strong> Day High: </strong> {{stock.high}}<br/>
+    <strong> Day Low: </strong>{{stock.low}}<br/>
+    <strong> 52Week High: </strong>{{stock.week52High}}<br/>
+    <strong> 52Week Low: </strong>{{stock.week52Low}}<br/><br/>
+  
+</div>
+
+<br/><br/>
+    
+    <!--
+    {{#each stock}}
+        {{@key}} | {{this}}<br/>
+    {{/each}} -->
